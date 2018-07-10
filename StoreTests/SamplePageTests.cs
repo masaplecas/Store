@@ -27,7 +27,7 @@ namespace StoreTests
         [TestCase("@domain.com")]
         [TestCase("@domain")]
 
-        public void VerifyEmailFormatHasToBeCorrect(string invalidEmail)
+        public void VerifyEmailFormatHasToBeCorrectToPostComment(string invalidEmail)
         {
             HomePage homePage = Utility.NavigateToPage<HomePage>();
             SamplePage samplePage = homePage.FooterMenu.ClickOnSamplePageLink();
@@ -48,5 +48,7 @@ namespace StoreTests
             Assert.IsTrue(samplePage.UrlContainsComment());
 
         }
+
+
     }
 }
