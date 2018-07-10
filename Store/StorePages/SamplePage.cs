@@ -27,7 +27,7 @@ namespace Store
         [FindsBy(How = How.Id, Using = "submit")]
         private IWebElement postCommentButton;
 
-        private int commentCount;
+
         #endregion
 
         #region Ctor
@@ -81,11 +81,6 @@ namespace Store
             }
         }
 
-        public int CommentCount
-        {
-            get { return commentCount; }
-            set { commentCount = value; }
-        }
 
         #endregion
 
